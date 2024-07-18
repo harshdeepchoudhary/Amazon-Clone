@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link href="/src/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+    <title>GraniMart</title>
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="hdn-head">
+            <h2>Hello, Sign in</h2>
+        </div>
+        <div class="hdn-content">
+            <h3>Digital Content & Devices</h3>
+            <ul>
+                <div>
+                    <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Kindle E-Readers & Books</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Appstore for Android</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Shop By Department</h3>
+            <ul>
+                <div>
+                    <li>Electronics</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Computers</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Smart Homes</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Arts & Crafts</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Programs & Features</h3>
+            <ul>
+                <div>
+                    <li>Gift Cards & Mobile Recharges</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Flight Tickets</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Clearance Store</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+    </div>
+    <i class="fa-solid fa-xmark" onclick="toggleSidebar()"></i>
+    <div class="triangle"><i class="fa-solid fa-triangle"></i></div>
+    <div class="hdn-sign">
+        <div class="hdn-table">
+            <div>
+                <h3>Your Lists</h3>
+                <ul>
+                    <li>Create a List</li>
+                    <li>Find a List & Registry</li>
+                    <li>Amazon Smile Charity Lists</li>
+                </ul>
+            </div>
+            <div class="hdn-line"></div>
+            <div>
+                <h3>Your Account</h3>
+                <ul>
+                    <li>Account</li>
+                    <li>Orders</li>
+                    <li>Recommendations</li>
+                    <li>Browsing History</li>
+                    <li>Watchlist</li>
+                    <li>Video Purchases</li>
+                    <li>Kindle Unlimited</li>
+                    <li>Content & Devices</li>
+                    <li>Subscribe & Save Items</li>
+                    <li>Membership</li>
+                    <li>Music Library</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="black"></div>
+    <header>
+        <div class="first">
+            <div class="flex logo">
+                <a href="index.html" style="margin-top: 5%;"><img src="images/logo.jpg" alt=""></a>
+                <div class="map flex">
+                    <i class="fas fa-map-marker"></i>
+                    <div>
+                        <span>Deliver to</span>
+                        <span>India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex input">
+                <div>
+                    <span>All</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <input type="text">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="flex right">
+                <div class="flex lang">
+                    <img src="images/usflag.jpg" alt="">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="sign">
+                    <span>Hello, Sign in</span>
+                    <div class="flex ac">
+                        <span>Accounts & Lists</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="sign">
+                    <span>Returns</span>
+                    <span>& Orders</span>
+                </div>
+                <div class="flex cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="ca">Cart</span>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="second-1" onclick="toggleSidebar()">
+                <div>
+                    <i class="fas fa-bars"></i>
+                    <span>All</span>
+
+                </div>
+            </div>
+            <div class="second-2">
+
+
+                <nav class=" dark:bg-gray-900">
+                    <div class="w-full">
+
+
+                        <div class=" w-full   id=" navbar-default">
+                            <ul
+                                class="container-fluid font-small flex flex-col  md:p-0 mt-3   md:flex-row  md:border-0">
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-3  no-underline text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white "
+                                        aria-current="page">Natural Granite</a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white "
+                                        aria-current="page">Artificial
+                                        Granite</a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Marbles
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Sand Stone
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Other Stones
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Ceramic Tiles
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Stone & Abrasuves
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Stone Chemicals
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Stone Blocks
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block no-underline py-2 px-3 text-white " aria-current="page">
+                                        Land Stone
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementById('successButton').click();
+        });
+    </script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
